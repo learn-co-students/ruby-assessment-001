@@ -1,29 +1,15 @@
-# RubyAssessment
+# Ruby Assessment
 
-TODO: Write a gem description
+Run `bundle install` to install all dependencies 
 
-## Installation
+Run `rake spec` to run all of the tests.
 
-Add this line to your application's Gemfile:
+If you want to run a specific level, run `rspec spec/level_x_spec.rb` where x is the level you want to run.
 
-    gem 'ruby_assessment'
+## Levels 1 - 3
 
-And then execute:
+To pass these levels add code with the tests. For most cases, put your code before the expectations, execpt for the tests that have `expect(STDOUT).to receive(:puts)`. Your code should go AFTER those expectations. 
 
-    $ bundle
+## Levels 4+
 
-Or install it yourself as:
-
-    $ gem install ruby_assessment
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/ruby_assessment/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+You will have to put your code separate files that should be loaded. Add your methods for level 4 in the file located in the lib directory, named `level4.rb`.
