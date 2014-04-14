@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Level2 do
+describe "Level 2" do
   describe "Hashes" do
     it "adds a new key" do
       instructor = {name: "Steven", age: 30}

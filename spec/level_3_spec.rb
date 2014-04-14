@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Level3 do
+describe "Level 3" do
   describe "Nested Structures" do
       let(:school) do 
         # Using let makes a value named school available in all of the tests.
