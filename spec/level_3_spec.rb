@@ -41,7 +41,11 @@ describe "Level 3" do
 
     it "modifies all values from nested array" do
       # Add a key to every student in the students array with a key of :semester and assign it the value "Summer".
+<<<<<<< HEAD
       expect(school[:students].all? {|student| student[:semester] == "Summer"}).to be_true
+=======
+      expect(school[:students].all? {|student| student[:semester] == "Summer"})
+>>>>>>> Finish tests for level 3
     end
 
     it "changes value of hash in nested array" do
