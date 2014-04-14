@@ -81,7 +81,6 @@ describe "Level 3" do
       expect(STDOUT).to receive(:puts).with("A")
       expect(STDOUT).to receive(:puts).with("Sophie")
       expect(STDOUT).to receive(:puts).with("C")
-
       # puts all the values in the school. NOTE: If this takes too long, skip it!
     end
   end
