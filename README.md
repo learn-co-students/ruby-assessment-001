@@ -7,9 +7,9 @@ tags: assessment
 
 Run `bundle install` to install all dependencies 
 
-Run `rake spec` to run all of the tests.
+Run `rspec spec/level_x_spec.rb` where x is the level you want to run. Start with Level 1.
 
-If you want to run a specific level, run `rspec spec/level_x_spec.rb` where x is the level you want to run.
+Run `rake spec` to run all of the tests when you are done. Running it before you finish will prevent all tests from running.
 
 ## Levels 1 - 3
 
