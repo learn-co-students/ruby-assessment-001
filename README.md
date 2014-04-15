@@ -1,3 +1,8 @@
+---
+languages: ruby
+tags: assessment
+---
+
 # Ruby Assessment
 
 Run `bundle install` to install all dependencies 
