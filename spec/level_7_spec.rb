@@ -10,7 +10,7 @@ describe "Level 7" do
 
 			found_self = Student.return_self
 			# Fill in the blank
-			expect(found_self).to ___
+			expect(found_self).to eq(Student)
 		end 
 
 		it "returns self from body of the class" do
@@ -20,7 +20,7 @@ describe "Level 7" do
 				$found_self = self
 			end
 			# Fill in the blank
-			expect(found_self).to ___
+			expect($found_self).to eq(Student)
 		end
 
 		it "returns self from an instance method" do
@@ -32,7 +32,7 @@ describe "Level 7" do
 
 			student = Student.new
 			# Fill in the blank
-			expect(student.return_self).to ___
+			expect(student.return_self).to be_a Student
 		end
 	end
 end
