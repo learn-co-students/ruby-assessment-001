@@ -17,7 +17,7 @@ describe "Level 1" do
 			# iterate over each element in the array and puts it
 		end
 
-		it "returns the value at index 1" do
+		it "returns the value at index 0" do
 			array = ["Blake","Steven","Jeff"]
 			element_1 = :banana # replace banana with the code that finds the first element
 			expect(element_1).to eq("Blake") 
