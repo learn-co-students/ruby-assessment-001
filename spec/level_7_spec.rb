@@ -20,7 +20,7 @@ describe "Level 7" do
 				$found_self = self
 			end
 			# Fill in the blank
-			expect(found_self).to ___
+			expect($found_self).to ___
 		end
 
 		it "returns self from an instance method" do
