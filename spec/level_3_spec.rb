@@ -59,7 +59,7 @@ describe "Level 3" do
       expect(student_name).to eq "Marissa"
     end
 
-    it "finds instructor by their subject" do
+    it "finds subject by its instructor" do
       subject_name = :banana # Return the subject of the instructor "Jeff".
       expect(subject_name).to eq("Karaoke")
     end
