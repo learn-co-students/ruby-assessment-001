@@ -47,20 +47,20 @@ module Level6
         end
 
         it "knows if a student is enrolled" do
-          expect(school.student_enrolled?('Marissa')).to be_true
-          expect(school.student_enrolled?('James Mason')).to be_false
+          expect(school.student_enrolled?('Marissa')).to eq(true)
+          expect(school.student_enrolled?('James Mason')).to eq(false)
         end
 
         it "adds students to school" do
           name = "Santiago Mitre"
           grade = "B"
           school.add_student(name, grade)
-          expect(school.student_enrolled?(name)).to be_true
+          expect(school.student_enrolled?(name)).to eq(true)
         end
 
         it "removes students from school" do
           school.remove_student('Frank')
-          expect(school.student_enrolled?('Frank')).to be_false
+          expect(school.student_enrolled?('Frank')).to eq(false)
         end 
 
         it "finds a student by name" do
