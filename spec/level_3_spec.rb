@@ -51,7 +51,7 @@ describe "Level 3" do
 
     it "changes value of hash in nested students array" do
       # Change Frank's grade from "A" to "F".
-       expect(school[:students].find{|student| student[:name] == "Frank"}[:grade]).to eq "F"
+      expect(school[:students].find{|student| student[:name] == "Frank"}[:grade]).to eq "F"
     end
 
     it "finds student by their grade" do
