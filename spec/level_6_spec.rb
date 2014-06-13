@@ -73,6 +73,6 @@ module Level6
 # c. Create a method in the School class that finds a student by name and returns the correct Student object.
 
 
-end
-end
+    end
+  end
 end
