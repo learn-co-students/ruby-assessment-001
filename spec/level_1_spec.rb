@@ -2,12 +2,12 @@ require 'spec_helper'
 
 describe "Level 1" do
   describe "Arrays" do
-		it "adds an element to an array" do 
-			array = ["Blake","Steven","Jeff"]
-  		# add an element to the array
+	  it "adds an element to an array" do 
+		  array = ["Blake","Steven","Jeff"]
+  	  # add an element to the array
 		  array << "Steven"
-			expect(array.count).to eq(4)
-		end
+		  expect(array.count).to eq(4)
+	  end
 
 		it "prints each element in the array" do
 			array = ["Blake","Steven","Jeff"]
