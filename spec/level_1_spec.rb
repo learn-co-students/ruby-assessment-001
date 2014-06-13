@@ -20,11 +20,10 @@ describe "Level 1" do
 			end
 		end
 
-		it "returns the value at index 1" do
-			array = ["Blake","Ashley","Jeff"]
-			element_1 = array.first
-
-			expect(element_1).to eq("Blake") 
+		it "returns the value at index 0" do
+			array = ["Blake","Steven","Jeff"]
+			element_0 = array[0] # replace banana with the code that finds the first element
+			expect(element_0).to eq("Blake") 
 		end
 
 		it "returns the user at an index" do

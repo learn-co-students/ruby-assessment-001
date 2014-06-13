@@ -20,7 +20,7 @@ module Level6
         ]
       end
 
-      describe Student do
+      describe "Student" do
         it "is initialized with name and grade" do
           name = "Santiago Mitre"
           grade = "B"
@@ -30,7 +30,7 @@ module Level6
         end
       end
 
-      describe School do
+      describe "School" do
         let(:students) do
           marissa = Student.new "Marissa",  "B" 
           billy   = Student.new "Billy",    "F" 
@@ -73,6 +73,6 @@ module Level6
 # c. Create a method in the School class that finds a student by name and returns the correct Student object.
 
 
-end
-end
+    end
+  end
 end

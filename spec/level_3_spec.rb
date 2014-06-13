@@ -42,7 +42,7 @@ describe "Level 3" do
     it "modifies all values from nested array" do
       # Add a key to every student in the students array with a key of :semester and assign it the value "Summer".
       school[:students].each {|student| student[:semester] = "Summer" }
-      expect(school[:students].all? {|student| student[:semester] == "Summer"}).to be_true
+      expect(school[:students].all? {|student| student[:semester] == "Summer"}).to eq(true)
     end
 
     it "changes value of hash in nested array" do
@@ -65,7 +65,7 @@ describe "Level 3" do
       expect(student_name).to eq "Marissa"
     end
 
-    it "finds instructor by their subject" do
+    it "finds the subject by its instructor" do
       instructor = school[:instructors].find { |student| student[:name] == "Jeff" }
       subject_name = instructor[:subject] # Return the subject of the instructor "Jeff".
       expect(subject_name).to eq("Karaoke")
