@@ -1,6 +1,7 @@
 ---
 languages: ruby
 tags: assessment
+resources: 0
 ---
 
 # Ruby Assessment
