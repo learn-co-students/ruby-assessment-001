@@ -1,4 +1,4 @@
 require 'bundler'
 Bundler.setup(:default, :ci)
 
-require "lib/level_4.rb"
+require_relative "../lib/level_4.rb"
