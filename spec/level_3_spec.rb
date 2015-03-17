@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe "Level 3" do
   describe "Nested Structures" do
       let(:school) do 

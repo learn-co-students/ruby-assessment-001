@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe "Level 4" do
   describe "Methods" do
     # For this assignment create a file in the lib directory.
@@ -12,8 +10,8 @@ describe "Level 4" do
         :location => "NYC",
         :instructors => [ 
           {:name=>"Blake", :subject=>"Being Awesome" },
-          {:name=>"Steven", :subject=>"Being Just 'OK'"},
-          {:name=>"Jeff", :subject=>"Karaoke"}
+          {:name=>"Steven", :subject=>"Being Very Cool"},
+          {:name=>"Katie", :subject=>"Being Pretty Chill"}
         ],
         :students => [ 
           {:name => "Marissa", :grade => "B"},
@@ -30,7 +28,18 @@ describe "Level 4" do
       rescue NoMethodError
         abort "You have to define a grade_for method in lib/level4.rb"
       end
-    end  
+    end
+
+    describe "#find_instructor" do
+      it "can find instructor when given the instructor's name and school hash" do
+        blake = find_instructor("Blake", school)
+        expect(blake[:subject]).to eq("Being Awesome")
+        steven = find_instructor("Steven", school)
+        expect(steven[:subject]).to eq("Being Very Cool")
+        katie = find_instructor("Katie", school)
+        expect(katie[:subject]).to eq("Being Pretty Chill")
+      end
+    end
    
     it "updates an instructor's subject" do
       update_subject_for("Blake", "Being Amazing", school)
