@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe "Level 2" do
   describe "Hashes" do
     it "adds a new key" do

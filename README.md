@@ -6,9 +6,12 @@ resources: 0
 
 # Ruby Assessment
 
-Run `bundle install` to install all dependencies 
+Run `bundle install` to install all dependencies.
+
 
 Run `rspec spec/level_x_spec.rb` where x is the level you want to run. Start with Level 1.
+
+If you'd like to start the test a particular line number, you can run `rspec spec/level_1_spec.rb:18`. This will execute the test in the level one spec that starts on line 18 and goes to line 22. 
 
 Run `rake spec` to run all of the tests when you are done. Running it before you finish will prevent all tests from running.
 

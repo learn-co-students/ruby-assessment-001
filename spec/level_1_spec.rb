@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe "Level 1" do
 	describe "Arrays" do
 		it "adds an element to an array" do 
